@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-20">
+
+  <!-- Navigation -->
+  <div class="bg-blue-500 fixed top-0 left-0 w-full">
+    <div class="container mx-auto h-20 px-4 flex justify-between items-center">
+      <a href="/">
+        <h1 class="text-4xl text-white">ระบบสมาชิก</h1>
+      </a>
+      <ul class="flex gap-4">
+        <li><a class="text-white text-lg" href="/">หน้าหลัก</a></li>
+        <li><a class="text-white text-lg" href="/register.html">ลงทะเบียน</a></li>
+        <li><a class="text-white text-lg" href="/profile.html">โปรไฟล์</a></li>
+        <li><a class="text-white text-lg" href="/edit-profile.html">แก้ไขข้อมูล</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="container mx-auto">
+    <div class="flex justify-center items-center min-h-[calc(100vh-80px)] p-4">
+      <div class="rounded-md shadow-lg">
+        <div class="rounded-t-md bg-blue-500">
+          <h1 class="text-white text-center text-3xl p-3">ยินมีต้อนรับสู่ระบบสมาชิก</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-8 gap-8">
+          <div class="border flex flex-col items-center rounded-md p-4 md:col-span-2 lg:col-span-1">
+            <h1 class="text-xl font-bold">ลงทะเบียนสมาชิก</h1>
+            <p class="mt-2">สมัครสมาชิกใหม่เพื่อใช้งานระบบ</p>
+            <a href="/register.html" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md">
+              ลงทะเบียน
+            </a>
+          </div>
+
+          <div class="border flex flex-col items-center rounded-md p-4">
+            <h1 class="text-xl font-bold">ดูโปรไฟล์</h1>
+            <p class="mt-2">ดูข้อมูลโปรไฟล์ของคุณ</p>
+            <a href="/profile.html" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md">
+              ดูโปรไฟล์
+            </a>
+          </div>
+
+          <div class="border flex flex-col items-center rounded-md p-4">
+            <h1 class="text-xl font-bold">แก้ไขข้อมูล</h1>
+            <p class="mt-2">แก้ไขข้อมูลส่วนตัวของคุณ</p>
+            <a href="/edit-profile.html" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md">
+              แก้ไขข้อมูล
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-20">
+
+  <!-- Navigation -->
+  <div class="bg-blue-500 fixed top-0 left-0 w-full">
+    <div class="container mx-auto h-20 px-4 flex justify-between items-center">
+      <a href="/">
+        <h1 class="text-4xl text-white">ระบบสมาชิก</h1>
+      </a>
+      <ul class="flex gap-4">
+        <li><a class="text-white text-lg" href="/">หน้าหลัก</a></li>
+        <li><a class="text-white text-lg" href="/register.html">ลงทะเบียน</a></li>
+        <li><a class="text-white text-lg" href="/profile.html">โปรไฟล์</a></li>
+        <li><a class="text-white text-lg" href="/edit-profile.html">แก้ไขข้อมูล</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="container mx-auto">
+    <div class="flex flex-col justify-center items-center min-h-[calc(100vh-80px)] p-4">
+      <div class="w-full max-w-4xl rounded-md shadow-lg">
+        <div class="flex flex-col items-center p-8 bg-blue-500 rounded-t-md">
+          <div class="w-40 h-40 rounded-full border-[3px] overflow-hidden">
+            <img src="/img/person.jpg" alt="Person image" class="h-full w-full object-cover">
+          </div>
+          <h1 class="text-white text-3xl m-3">สมชายใจดี</h1>
+          <p class="text-white">เป็นสมาชิกตั้งแต่ 8 ธันวาคม 2568</p>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <div class="p-4">
+            <span class="text-sm text-gray-600">ชื่อ</span>
+            <p>สมชาย</p>
+          </div>
+          <div class="p-4">
+            <span class="text-sm text-gray-600">นามสกุล</span>
+            <p>ใจดี</p>
+          </div>
+          <div class="p-4">
+            <span class="text-sm text-gray-600">อีเมล</span>
+            <p>somchai@example.com</p>
+          </div>
+          <div class="p-4">
+            <span class="text-sm text-gray-600">เบอร์โทรศัพท์</span>
+            <p>099-888-7777</p>
+          </div>
+          <div class="p-4">
+            <span class="text-sm text-gray-600">วันเกิด</span>
+            <p>8 ธันวาคม 2568</p>
+          </div>
+          <div class="p-4">
+            <span class="text-sm text-gray-600">เพศ</span>
+            <p>ชาย</p>
+          </div>
+          <div class="p-4 col-span-2">
+            <span class="text-sm text-gray-600">ที่อยู่</span>
+            <p>123 ถนนสุขุมวิท แขวงคลองตัน เขตคลองตัน กรุงเทพมหานคร 10110</p>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div id="submit-box" class="w-full flex justify-end p-4 gap-4">
+          <a href="/index.html" class="cursor-pointer text-center text text-white bg-gray-500 duration-300 hover:bg-gray-700 active:ring-2 active:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 outline-none">กลับหน้าหลัก</a>
+          <a href="/edit-profile.html" class="cursor-pointer text-center text text-white bg-blue-500 duration-300 hover:bg-blue-700 active:ring-2 active:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 outline-none">แก้ไขข้อมูล</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
